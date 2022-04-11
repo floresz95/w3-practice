@@ -2,6 +2,17 @@ body{
     padding: 0;
     margin: 0;
 }
+
+div{
+    box-sizing: border-box;
+}
+
+body > div.first {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+
 body > div {
     height: 100vh;
     width: 100vh;
@@ -51,5 +62,35 @@ body > div > div > div > div > div > div > div > div > div {
 body > div > div > div > div > div > div > div > div > div > div {
     height: 10vh;
     width: 10vh;
-    background-color: #F7E2E2;
+    background-color: #ebb6b6;
+}
+.most-inner{
+    border-radius: 50%;
+}
+
+body > div.first,
+div.most-inner{
+    border-bottom: 10px solid #f1f1f1;
+}
+
+div.most-inner:hover{
+    background-color: black;
+}
+
+div.first ~ div {
+    border-left: 10px solid #0093AB;
+}
+
+div.most-inner::before {
+    content: "A";
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
+div.most-inner::after {
+    content: "B";
 }
