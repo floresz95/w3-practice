@@ -73,7 +73,7 @@ div.most-inner{
     border-bottom: 10px solid #f1f1f1;
 }
 
-div.most-inner:hover{
+div.first.most-inner:hover{
     background-color: black;
 }
 
@@ -81,7 +81,7 @@ div.first ~ div {
     border-left: 10px solid #0093AB;
 }
 
-div.most-inner::before {
+div.first.most-inner::before {
     content: "A";
     position: fixed;
     display: block;
